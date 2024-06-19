@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GeneratorTool</class>
+ <widget class="QDialog" name="GeneratorTool">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>592</width>
+    <height>397</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Consolas</family>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>GeneratorTool</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#GeneratorTool{
+border-width: 8px;
+border-image: url(:/res/shadow.png) 16 16 16 16;
+}</string>
+  </property>
+  <widget class="QPlainTextEdit" name="PublicTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>70</y>
+     <width>550</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Courier New</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 2px;
+border:1px solid #DCDCDD;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="PrivateTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>200</y>
+     <width>550</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Courier New</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 2px;
+border:1px solid #DCDCDD;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>52</y>
+     <width>81</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>PublicKey</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>182</y>
+     <width>81</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>PrivateKey</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="footer" native="true">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>350</y>
+     <width>584</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#footer{
+background:#fff;
+border-top:1px solid #DCDCDD;
+}</string>
+   </property>
+   <widget class="QPushButton" name="btn_generate">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>6</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_generate{
+background: #2d72d2;
+color: #fff;
+border:1px solid #1D4E92;
+border-radius: 2px;
+}
+
+#btn_generate:hover{
+background: #1D4E92;
+color: #fff;
+border:1px solid #1D4E92;
+border-radius: 2px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Generate key pair</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/Action_ResetPassword.png</normaloff>:/res/Action_ResetPassword.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_save">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>6</y>
+      <width>121</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btn_save{
+background-color: #f6f7f9;
+border-radius: 2px;
+color: #1c2127;
+border:1px solid #B4B6BA;
+}
+#btn_save:hover{
+background-color: #DFE1E4;
+border-radius: 2px;
+color: #1c2127;
+border:1px solid #B4B6BA;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Save to folder</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/Action_Save.png</normaloff>:/res/Action_Save.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_open_location">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>6</y>
+      <width>121</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+#btn_open_location{
+background-color: #f6f7f9;
+border-radius: 2px;
+color: #1c2127;
+border:1px solid #B4B6BA;
+}
+#btn_open_location:hover{
+background-color: #DFE1E4;
+border-radius: 2px;
+color: #1c2127;
+border:1px solid #B4B6BA;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Open Location</string>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/res/Action_Open.png</normaloff>:/res/Action_Open.png</iconset>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
